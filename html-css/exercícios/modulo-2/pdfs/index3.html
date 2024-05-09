@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando um link</title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .especial::before {
+            content: '>>';
+            font-weight: lighter;
+        }
+
+        .especial::after {
+            content: '<<';
+            font-weight: lighter;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>
+        Para aprender HTML5 e CSS3, acesse o
+        <a href="https://gustavoguanabara.github.io">Github do Guanabara
+        </a>
+    </p>
+    <p>
+        Se quiser conhecer mais sobre os padrões, visite o site do
+        <a href="https:www.w3c.br">Escritório do W3C no Brasil</a>
+    </p>
+    <p>Para acompanhar os cursos, acesse o
+        <a href="https://www.youtube.com/cursoemvideo/"class="especial">Canal do CursoemVideo</a>
+    </p>
+</body>
+</html>

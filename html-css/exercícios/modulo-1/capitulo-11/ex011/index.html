@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Imagens, Áudio e Vídeos</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Aqui está uma imagem que se adapta de acordo com o tamanho disposto para ser exibido (Tela de TV, PCs, Celulares etc.):</p>
+    <picture> 
+        <!-- Obrigatório Usar em Ordem Crescente as Versões | Ele está primeiro dispondo a imagem grande, mas estamos colocando cláusulas para que seja levado em consideração o tamanho a dispor do dispositivo | Imagem principal tem que ser a maior -->
+        <source media="(max-width: 750px)" srcset="imagens/imagem-300px.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-700px.png" type="image/png">
+        <img src="imagens/imagem-1000px.png" alt="Imagem Dinâmica">
+    </picture>
+    <h1>Testando Áudio</h1>
+    <p>Você pode ouvir um áudio através do uso de controle disposto logo abaixo sobre a música: Sergio Magic Dustbin.</p>
+    <audio controls autoplay loop preload="metadata"
+    src="midia/Sergio-Magic-Dustbin.mp3"> 
+    <!-- Controls = Habilita para que seja exibido um paínel de controle para o usuário | autoplay = Assim que carregado o aúdio na página será tocado | Loop = Mantém o áudio tocando do ínicio assim que terminar | Preload = Forma que será carregado o áudio -->
+    <source src="midia/Sergio-Magic-Dustbin.mp3" type="audio.mpeg">
+    <source src="midia/Sergio-Magic-Dustbin.ogg" type="audio/ogg">
+    <source src="midia/Sergio-Magic-Dustbin.wav" type="audio/wav">
+    <!-- Para que seja reproduzido na maioria dos navegadores (isso depende do navegador usado) usa-se o source:src para interpretar diferentes tipos de áudio como .mpeg (mp3) | .ogg | .wav -->
+    </audio>
+    <p>Se caso você não conseguiu reproduzir o áudio, <a href="midia/Sergio-Magic-Dustbin.mp3">clique aqui para baixá-lo</a></p> 
+    
+</body>
+</html>

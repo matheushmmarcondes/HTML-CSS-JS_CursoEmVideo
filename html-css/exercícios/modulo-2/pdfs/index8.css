@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'Android', sans-serif;
+}
+
+main {
+    min-width: 400px;
+    max-width: 800px;
+}
+
+body {
+    font-family: var(--fonte0);
+    color: var(--cor0);
+    background-color: var(--cor1);
+}

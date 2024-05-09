@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(24, 97, 126);
+    font-size: 2em;
+}
+
+h2 {
+    
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(33, 136, 161);
+    font-size: 1.5em; 
+}
+
+p {
+    /*
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+
+     A ordem dos atributos de uma shorthand em CSS é importante. No caso da 
+    propriedade font, devemos informar, na ordem:
+    • font-style
+    • font-variant
+    • font-weight
+    • font-size/line-height
+    • font-family
+    */
+    
+    font: italic bold 1em Arial, H;
+}

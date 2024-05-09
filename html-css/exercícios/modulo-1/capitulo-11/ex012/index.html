@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video width="560" poster="imagens/capa.png" controls autoplay loop> 
+        <!-- Segue dentro da tag video, alternativas para se caso o navegador não conseguir reproduzir o vídeo por causa do tipo, utilizando a tag "source:src" é possível dar alternativas para o navegador tentar dispor o vídeo. Se caso sem êxito, exibirá a mensagem dizendo que não é possível reproduzir o vídeo. -->
+        <source src="midia/garota-lendo-720.mp4" type="video/mp4">
+        <source src="midia/Garota-Lendo-720.mkv" type="video/mkv">
+        <source src="midia/garota-lendo-720.ogv" type="video/ogv">
+        <source src="midia/garota-lendo-720.webm" type="video/webm">
+        <p>Seu navegador não tem carapacidade para reproduzir o vídeo</p>
+    </video> 
+    <!-- Vídeos hospedados localmente tendem a ser lentos e podem prejudicar o usuário de maneira a onde seja consumido exacerbadamente a banda larga e emitindo lentidão para navegação no site. -->
+    <h1>Hospedando Vídeos Externos</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=FobrJUncfkw8C-6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
