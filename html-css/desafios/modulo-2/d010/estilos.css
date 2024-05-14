@@ -60,14 +60,31 @@ nav > a {
 main {
     border-radius: 0px 0px 8px 8px;
     background-color: white;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     margin-top: 1.3px;
-    position: relative;
+    box-shadow: 0px 0px 10px black;
+    padding: 13px;
 }
 
 main > article > h1 {
     margin-top: 0;
+    font-family: 'idroid';
+    color: var(--cor4);
+}
+
+main > article > h3 {
+    font-family: 'idroid';
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor0), white);
+}
+
+main > article > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > article > p > strong {
+    color: #1A5C37;
 }
 
 footer {
