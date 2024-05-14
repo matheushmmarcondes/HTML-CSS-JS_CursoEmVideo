@@ -21,8 +21,8 @@
 }
 
 body {
-    align-items: center;
-    margin: 0;
+    background-color: var(--cor1);
+    margin: 0px;
 }
 
 header {
@@ -55,4 +55,22 @@ nav > a {
     font-family: var(--fonte2);
     margin-left: 10px;
     text-decoration: none;
+}
+
+main {
+    border-radius: 0px 0px 8px 8px;
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 1.3px;
+    position: relative;
+}
+
+main > article > h1 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
 }
