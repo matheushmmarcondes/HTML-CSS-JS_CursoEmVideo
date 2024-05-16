@@ -20,6 +20,13 @@
     background-image: linear-gradient(var(--cor2), var(--cor4));
 }
 
+div > .irina {
+    max-width: 95%;
+    max-height: 100%;
+    margin: 0px;
+
+}
+
 div.video {
     position: relative;
     background-color: var(--cor4);
