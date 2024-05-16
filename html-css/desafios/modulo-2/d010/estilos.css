@@ -17,6 +17,12 @@
     --fonte2: 'Android', sans-serif;
 }
 
+#unico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cabecalho {
     background-image: linear-gradient(var(--cor2), var(--cor4));
 }
@@ -41,7 +47,8 @@ div.video {
 body {
     background-color: var(--cor1);
     margin: 0px;
-}
+    background-color: #f0e4c4;
+    }
 
 header {
     display: grid;
@@ -159,6 +166,9 @@ main > article > p > strong {
 main > article > p > a {
     color: var(--cor4);
     text-decoration: none;
+    background-color: var(--cor2);
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 main > article > div.video > iframe {
@@ -169,25 +179,26 @@ main > article > div.video > iframe {
     height: 90%; 
 }
 
-main > article > aside {
+main > article > div > aside {
     background-color: var(--cor0);
     border-radius: 10px;
-    max-width: 900px;
+    max-width: 95%;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.296);
     margin-right: 15px;
     margin-left: 15px;
 }
 
-main > article > aside > h4 {
+main > article > div > aside > h4 {
     background-color: var(--cor3);
     font-family: var(--fonte2);
     color: white;
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
+    margin-top: 0;
     margin-bottom: 0px;
 }
 
-main > article > aside > p {
+main > article > div > aside > p {
     font-family: var(--fonte0);
     padding: 10px;
     margin-top: 5px;
@@ -196,7 +207,7 @@ main > article > aside > p {
     text-indent: 30px;
 }
 
-main > article > aside > ol {
+main > article > div > aside > ol {
     columns: 2;
     font-size: 1.3em;
     font-family: var(--fonte0);
@@ -204,7 +215,7 @@ main > article > aside > ol {
     list-style-type: '\2714\0020\0020';
 }
 
-main > article > aside > p > a {
+main > article > div > aside > p > a {
     color: var(--cor4);
     text-decoration: none;
 }
