@@ -18,9 +18,9 @@
 }
 
 #unico {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .cabecalho {
@@ -35,19 +35,19 @@ div > .irina {
 }
 
 div.video {
-    position: relative;
     background-color: var(--cor4);
     height: 0px;
     margin-left: 0;
     margin-right: 0px;
     margin-bottom: 15px;
+    position: relative;
     padding-bottom: 59%;
 }
 
 body {
     background-color: var(--cor1);
-    margin: 0px;
     background-color: #f0e4c4;
+    margin: 0px;
     }
 
 header {
@@ -65,83 +65,76 @@ header > div > h4 {
     color: rgb(210, 210, 210);
     font-family: var(--fonte0);
     font-weight: 100;
-    text-align: center;
     font-size: 1.3em;
+    text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.538);
 }
 
 nav {
     background-color: var(--cor4);
-    font-size: 1.3em;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.553);
     display:  flex;
+    font-size: 1.3em;
 }
 
 nav > a {
+    border-radius: 3px 5px;
     color: rgb(255, 255, 255);
     font-style: none;
     font-family: var(--fonte2);
     margin-left: 10px;
+    margin-right: -8px;
+    padding: 8px;
     text-decoration: none;
     text-shadow: 1px 1px 1px var(--cor1);
-    padding: 8px;
-    border-radius: 3px 5px;
-    margin-right: -8px;
     transition: linear 300ms;
-
 }
 
 nav > a:hover {
+    background-color: var(--cor2);
     color: var(--cor4);
     font-style: none;
     font-family: var(--fonte2);
     margin-left: 10px;
     text-decoration: none;
     text-shadow: 1px 1px 1px var(--cor4);
-    background-color: var(--cor2);
     transition: linear 300ms;
 }
-
-/* 
-nav > a:mouseout {
-    background-color: var(--cor4);
-    transition: linear 300ms;
-} */
 
 main {
     border-radius: 0px 0px 8px 8px;
     background-color: white;
+    box-shadow: 0px 0px 10px black;
     max-width: 900px;
     margin: 0 auto;
     margin-top: 1.3px;
-    box-shadow: 0px 0px 10px black;
-    padding-bottom: 13px;
-    padding-top: 13px;    
     min-width: 400px;
     max-width: 800px;
+    padding-bottom: 13px;
+    padding-top: 13px;    
 }
 
 main > article > div {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 main > article > h1 {
+    color: var(--cor4);
     margin-top: 0;
+    margin: 15px 13px 0px 13px;
     font-size: 2em;
     font-family: 'idroid';
-    color: var(--cor4);
-    margin: 15px 13px 0px 13px;
 }
 
 main > article > h3 {
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor0), white);
     font-family: 'idroid';
     font-size: 1.5em;
-    color: var(--cor4);
     margin: 15px 13px 0px 13px; 
     padding-left: 8px;
-    background-image: linear-gradient(to right, var(--cor0), white);
 }
 
 main > article > div > img {
@@ -152,11 +145,11 @@ main > article > div > img {
 
 main > article > p {
     font-family: var(--fonte0);
-    text-align: justify;
     font-size: 1.3em;
-    margin: 30px 20px;
     line-height: 1.5em;
+    margin: 30px 20px;
     text-indent: 30px;
+    text-align: justify;
 }
 
 main > article > p > strong {
@@ -164,46 +157,46 @@ main > article > p > strong {
 }
 
 main > article > p > a {
+    background-color: var(--cor2);
     color: var(--cor4);
     text-decoration: none;
-    background-color: var(--cor2);
     padding-left: 4px;
     padding-right: 4px;
 }
 
 main > article > div.video > iframe {
+    height: 90%; 
+    left: 5%;
     position: absolute;
     top: 5%;
-    left: 5%;
     width: 90%;
-    height: 90%; 
 }
 
 main > article > div > aside {
     background-color: var(--cor0);
     border-radius: 10px;
-    max-width: 95%;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.296);
+    max-width: 95%;
     margin-right: 15px;
     margin-left: 15px;
 }
 
 main > article > div > aside > h4 {
     background-color: var(--cor3);
-    font-family: var(--fonte2);
-    color: white;
     border-radius: 10px 10px 0px 0px;
-    padding: 10px;
+    color: white;
+    font-family: var(--fonte2);
     margin-top: 0;
     margin-bottom: 0px;
+    padding: 10px;
 }
 
 main > article > div > aside > p {
     font-family: var(--fonte0);
-    padding: 10px;
-    margin-top: 5px;
-    text-align: justify;
     font-size: 1.3em;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: justify;
     text-indent: 30px;
 }
 
@@ -221,11 +214,11 @@ main > article > div > aside > p > a {
 }
 
 footer {
-    text-align: center;
-    width: 100%;
+    background-color: var(--cor5);
     color: white;
     font-family: var(--fonte0);
-    background-color: var(--cor5);
+    text-align: center;
+    width: 100%;
 }
 
 footer > p {
