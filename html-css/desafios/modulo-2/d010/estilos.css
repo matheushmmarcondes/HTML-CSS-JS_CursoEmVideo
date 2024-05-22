@@ -27,6 +27,11 @@
     background-image: linear-gradient(var(--cor2), var(--cor4));
 }
 
+a.externo::after {
+    content: '\1F517';
+    padding-right: 0px;
+}
+
 div > .irina {
     max-width: 95%; 
     max-height: 100%;
@@ -57,9 +62,11 @@ header {
 header > div > h1 {
     color: white;
     font-family: var(--fonte1);
+    font-weight: normal;
+    font-size: 3em;
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.505);
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 header > div > h4 {
@@ -123,10 +130,11 @@ main > article > div {
 
 main > article > h1 {
     color: var(--cor4);
-    margin-top: 0;
-    margin: 15px 13px 0px 13px;
     font-size: 2em;
     font-family: 'idroid';
+    font-weight: normal;
+    margin-top: 0;
+    margin: 15px 13px 0px 13px;
 }
 
 main > article > h3 {
@@ -163,6 +171,11 @@ main > article > p > a {
     text-decoration: none;
     padding-left: 4px;
     padding-right: 4px;
+}
+
+main > article > p > a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
 }
 
 main > article > div.video > iframe {
@@ -214,6 +227,11 @@ main > article > div > aside > p > a {
     text-decoration: none;
 }
 
+main > article > div > aside > p > a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
 footer {
     background-color: var(--cor5);
     color: white;
@@ -231,5 +249,11 @@ footer > p {
 footer > p > a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
     font-weight: bold;
 }
