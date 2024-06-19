@@ -6,6 +6,12 @@
     margin: 0;
 }
 
+.padding_p {
+    padding-top: 80px;
+    padding-bottom: 160px;
+    padding-left: 30px;
+}
+
 body {
     font-family: sriracha;
 }
@@ -19,6 +25,10 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     font-size: 15px;
+}
+
+p {
+    font-size: 50px;
 }
 
 header {
